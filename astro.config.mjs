@@ -6,7 +6,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://equidiretta.tv/",
+  site: "https://equidiretta.github.io/web/",
   build: {
     format: "directory",
   },
