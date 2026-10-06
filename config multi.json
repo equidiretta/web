@@ -1,0 +1,208 @@
+{
+  "title": "Equidiretta.tv",
+  "description": "Live Streaming Eventi Equestri",
+  "actions": {
+    "vedi": "streaming"
+  },
+  "analytics": {
+    "gaId": "G-HM54EXEG13"
+  },
+  "groups": [
+    {
+      "title": "Horses Riviera Resort",
+      "slug": "horses-riviera",
+      "image": "horses-riviera-resort.jpg",
+      "location": "San Giovanni in Marignano (RN)",
+      "programma": "riviera.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Grand Prix",
+          "slug": "arenagp",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/1670ea4d-3436-4793-8521-358790a17559"
+        },
+        {
+          "title": "Arena Toro",
+          "slug": "arenatoro",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/87db7e20-7097-455f-8b54-4d993c5d08fc"
+        },
+        {
+          "title": "Arena Scorpione",
+          "slug": "arenascorpione",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/be3f1ff7-3867-450a-af23-86b2b51b5f75"
+        },
+        {
+          "title": "Arena Acquario",
+          "slug": "arenaacquario",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/c4e59681-3f4f-4df5-875e-469c50dcc038"
+        }
+      ]
+    },
+    {
+      "title": "Arezzo Equestrian Centre",
+      "slug": "arezzo-equestrian",
+      "image": "arezzo-equestrian-centre.jpg",
+      "location": "Arezzo",
+      "programma": "arezzo.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Dante",
+          "slug": "arena-dante",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/835e2d6b-3a60-4ca6-8535-3d1a1cf59529"
+        },
+	{
+          "title": "Arena Dante B",
+          "slug": "arena-danteb",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/8a62a29b-1012-41ac-ba6d-0bc01d9ab5fd"
+        },
+        {
+          "title": "Arena Petrarca",
+          "slug": "arena-petrarca",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/a3a13901-3236-42db-b9e6-67f83c9d279e"
+        },
+        {
+          "title": "Arena Vasari",
+          "slug": "arena-vasari",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/af44e342-8e27-48bc-9eca-e0957c75146a"
+        },
+        {
+          "title": "Arena Boccaccio",
+          "slug": "arena-boccaccio",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/cffaa7e9-f029-49cd-82fa-0c5da5eb85df"
+        },
+	{
+          "title": "Arena Maneggio Coperto",
+          "slug": "arena-maneggio",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/c3b6f315-1ec4-4166-9edc-6c6cbd027ece"
+        },
+        {
+          "title": "Arena Rosa",
+          "slug": "arena-rosa",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/cf0161fb-3813-475e-8266-960d530058c3"
+        }
+      ]
+    },
+    {
+      "title": "Hermada Equestrian Centre",
+      "slug": "hermada-equestrian-centre",
+      "image": "hermada-equestrian-centre.jpg",
+      "location": "Borgo Hermada (LT)",
+      "programma": "hermada.md",
+      "imageProgramma": "",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Equisport",
+          "slug": "arena-equisport",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/4a8a781a-170a-4cac-b6d1-d1c36b82c775"
+        },
+        {
+          "title": "Arena Givova",
+          "slug": "arena-givova",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/6af0ae30-e028-4d79-93f1-b47a0c28d63f"
+        }
+      ]
+    },
+    {
+      "title": "Club Ippico Regno Verde",
+      "slug": "regno-verde",
+      "image": "regno-verde.jpg",
+      "location": "Narni (TR)",
+      "programma": "narni.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Equiteria",
+          "slug": "arena-equiteria",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/b0a3c429-8883-4451-adf4-4a9185cb9367"
+        },
+        {
+          "title": "Arena Equisport",
+          "slug": "arena-equisport",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/2bcc4646-d4d6-4482-8bca-fc980cf3af14"
+        }
+      ]
+    },
+    {
+      "title": "Le Lame Horses Sporting Club",
+      "slug": "le-lame",
+      "image": "le-lame.jpg",
+      "location": "Montefalco (PG)",
+      "programma": "le-lame.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Giove",
+          "slug": "arena-giove",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/a4e449b6-39a2-4d09-8262-f491c3e44d51"
+        },
+        {
+          "title": "Arena Nettuno",
+          "slug": "arena-nettuno",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/de33b75b-5d15-4d63-b085-b040e88d6ff1"
+        }
+      ]
+    },
+    {
+      "title": "G.E.S.E.",
+      "slug": "gese",
+      "image": "gese.jpg",
+      "location": "San Lazzaro di Savena (BO)",
+      "programma": "gese.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Indoor",
+          "slug": "arena-indoor",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/45f42bd2-a8f5-4088-b204-c53d58eef9d8"
+        },
+        {
+          "title": "Arena Outdoor",
+          "slug": "arena-outdoor",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/afdf7af0-7fc4-42a1-ab40-a8ce58923d72"
+        }
+      ]
+    },
+    {
+      "title": "Centro Equestre Veneto",
+      "slug": "mogliano",
+      "image": "mogliano.jpg",
+      "location": "Mogliano Veneto (TV)",
+      "programma": "mogliano.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Indoor",
+          "slug": "arena-indoor",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/d6e2cc09-1a4e-4bb6-887d-84109ae3ee9b"
+        },
+        {
+          "title": "Campo in sabbia",
+          "slug": "campo-sabbia",
+          "link": "https://iframe.dacast.com/live/32f7da7597b7ce92e10742fddd42a9bf/3a8d8681-41c6-4721-9118-f9075fab205d"
+        }
+      ]
+    },
+    {
+      "title": "Circolo Ippico Bibop",
+      "slug": "bibop",
+      "image": "bibop.jpg",
+      "location": "Pagnacco (UD)",
+      "programma": "bibop.md",
+      "live": true,
+      "links": [
+        {
+          "title": "Arena Indoor",
+          "slug": "arena-indoor",
+          "link": ""
+        },
+        {
+          "title": "Arena Outdoor",
+          "slug": "arena-outdoor",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

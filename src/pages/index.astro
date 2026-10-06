@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+export const prerender = true;
+import configData from "./../../config.json";
+
+const pageTitle = `Live streaming eventi equestri in diretta | ${configData.title}`;
+const venuesList = configData.groups
+  .map((g) => `${g.title} (${g.location})`)
+  .join(", ");
+const pageDescription = `Live streaming eventi equestri in diretta dai migliori centri ippici italiani: ${venuesList}.`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-12">
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-7xl mx-auto">
+        {configData.groups.map((g) => (
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+            <!-- Contenitore immagine/logo (mostra intero senza crop) -->
+            <a href={`/live/${g.slug}/`} class="block bg-gray-50 p-8">
+              <img
+                src={`/images/${g.image}`}
+                alt={`${g.title} - ${g.location}`}
+                class="w-full h-auto max-h-64 object-contain mx-auto"
+              />
+            </a>
+
+            <!-- Contenuto testo -->
+            <div class="p-6 flex flex-col items-center justify-between flex-1 text-center">
+              <div>
+                <!-- Titolo con location -->
+                <h3 class="text-2xl font-bold mb-6">
+                  <a href={`/live/${g.slug}/`} class="hover:text-custom-1 transition-colors">
+                    {g.title} - {g.location}
+                  </a>
+                </h3>
+              </div>
+
+              <!-- Pulsante arancione -->
+              <a
+                href={`/live/${g.slug}/`}
+                class="bg-custom-1 hover:bg-custom-2 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-md"
+              >
+                {configData.actions.vedi}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+    <section class="px-4 max-w-5xl mx-auto mb-10">
+      <h1 class="mb-4 text-3xl md:text-4xl font-bold">
+        Live streaming eventi equestri in diretta
+      </h1>
+      <p class="text-gray/80 max-w-3xl">
+        Equidiretta.tv trasmette gare di equitazione in diretta dai principali
+        centri ippici italiani. Segui le competizioni ovunque ti trovi con
+        streaming stabile e aggiornamenti costanti.
+      </p>
+      <div class="mt-6">
+        <h2 class="text-lg font-semibold mb-3">Centri e sedi in diretta</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+          {configData.groups.map((g) => (
+            <li>
+              <a class="link" href={`/live/${g.slug}/`}>
+                {g.title} - {g.location}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>

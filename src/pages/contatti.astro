@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import configData from "../../config.json";
+
+export const prerender = true;
+
+const pageTitle = `Contatti :: ${configData.title}`;
+const pageDescription = `Contatti ${configData.title}`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-10">
+    <section class="px-4 max-w-3xl mx-auto">
+      <div class="mb-6">
+        <h1>Contatti</h1>
+        <p class="text-gray/80">
+          Per informazioni e collaborazioni scrivi a:
+        </p>
+      </div>
+      <a class="link text-lg font-semibold" href="mailto:info@equidiretta.tv">
+        info@equidiretta.tv
+      </a>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import VideoPlayer from "../../../../components/VideoPlayer.astro";
+import configData from "./../../../../../config.json";
+import { marked } from "marked";
+
+const { slug, link } = Astro.params;
+
+export function getStaticPaths() {
+  return configData.groups.flatMap((g) => {
+    return g.links.flatMap((l) => {
+      return {
+        params: {
+          slug: g.slug,
+          link: l.slug,
+        },
+      };
+    });
+  });
+}
+
+const live = configData.groups.find((g) => g.slug === slug) ?? {
+  title: "not found",
+  slug: slug,
+  location: "",
+  links: [],
+  programma: "",
+};
+const data = live.links.find((l) => l.slug === link);
+const files = import.meta.glob("./../../../../../contents/*.md", {
+  as: "raw",
+  eager: true,
+});
+
+const programmaContent = files[`../../../../../contents/${live.programma}`];
+const programmaContentHtml = await marked.parse(programmaContent);
+---
+
+<Layout
+  title={`Live ${data?.title} - ${live.title} | ${configData.title}`}
+  description={`Live streaming ${data?.title} da ${live.title} a ${live.location}. Guarda la diretta e il programma su ${configData.title}.`}
+>
+  <main class="container mx-auto">
+    <section>
+      <h3><a href={`/live/${live.slug}/${data?.slug}`}>{data?.title}</a></h3>
+      <h4>
+        <a href={`/live/${live.slug}`}>Live {live.title}</a>
+      </h4>
+      <p class="text-gray/80 max-w-3xl">
+        Streaming live dell'arena {data?.title} presso {live.title} {live.location ? `(${live.location})` : ""}.
+      </p>
+      <VideoPlayer link={data?.link || ""} />
+      {live.links && live.links.length > 1 && (
+        <div class="mt-6">
+          <h5 class="mb-2">Altre arene in diretta</h5>
+          <ul class="flex flex-wrap gap-3">
+            {live.links
+              .filter((l) => l.slug !== data?.slug)
+              .map((l) => (
+                <li>
+                  <a class="link" href={`/live/${live.slug}/${l.slug}`}>
+                    {l.title}
+                  </a>
+                </li>
+              ))}
+          </ul>
+        </div>
+      )}
+      <div>
+        <div set:html={programmaContentHtml} />
+      </div>
+    </section>
+  </main>
+</Layout>

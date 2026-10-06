@@ -1,0 +1,112 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import configData from "../../../config.json";
+
+export const prerender = true;
+
+type BlogFrontmatter = {
+  title?: string;
+  date?: string;
+  description?: string;
+  excerpt?: string;
+};
+
+const toDateValue = (value?: string) => {
+  if (!value) return null;
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+};
+
+const posts = Object.entries(
+  import.meta.glob<{ frontmatter?: Record<string, unknown> }>(
+    "../../../blog/*.md",
+    { eager: true }
+  )
+)
+  .map(([path, post]) => {
+    const filename = path.split("/").pop() ?? "";
+    const slug = filename.replace(/\.md$/, "");
+    const frontmatter = (post.frontmatter ?? {}) as BlogFrontmatter;
+    return {
+      slug,
+      frontmatter,
+    };
+  })
+  .sort((a, b) => {
+    const aTime = toDateValue(a.frontmatter?.date)?.getTime() ?? 0;
+    const bTime = toDateValue(b.frontmatter?.date)?.getTime() ?? 0;
+    return bTime - aTime;
+  });
+
+const pageTitle = `Blog :: ${configData.title}`;
+const pageDescription = configData.description;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-10">
+    <section class="px-4">
+      <div class="mb-10 flex flex-col gap-3">
+        <small class="uppercase tracking-wide text-gray/70">Aggiornamenti</small>
+        <h1 class="text-gray">Blog</h1>
+        <p class="text-gray/80 max-w-2xl">
+          Notizie, comunicazioni e dietro le quinte del live streaming eventi
+          equestri di Equidiretta.tv.
+        </p>
+      </div>
+
+      {posts.length === 0 ? (
+        <div class="bg-white rounded-xl border border-gray/10 p-6">
+          <p class="text-gray/80">Nessun articolo disponibile al momento.</p>
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          {posts.map((post) => {
+            const title = post.frontmatter?.title ?? "Senza titolo";
+            const dateString =
+              typeof post.frontmatter?.date === "string"
+                ? post.frontmatter.date
+                : "";
+            const dateValue = toDateValue(dateString);
+            const dateLabel = dateValue
+              ? dateValue.toLocaleDateString("it-IT", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })
+              : "";
+            const summary =
+              post.frontmatter?.description ??
+              post.frontmatter?.excerpt ??
+              "";
+
+            return (
+              <article class="listCard p-6 flex flex-col gap-4">
+                <div>
+                  {dateLabel && (
+                    <small class="block text-gray/60">
+                      <time datetime={dateString || undefined}>{dateLabel}</time>
+                    </small>
+                  )}
+                  <h3 class="mt-2">
+                    <a class="link" href={`/blog/${post.slug}/`}>
+                      {title}
+                    </a>
+                  </h3>
+                </div>
+                {summary && <p class="text-gray/80">{summary}</p>}
+                <div>
+                  <a
+                    href={`/blog/${post.slug}/`}
+                    class="bg-custom-1 hover:bg-custom-2 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-md"
+                  >
+                    Leggi l'articolo
+                  </a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
+    </section>
+  </main>
+</Layout>

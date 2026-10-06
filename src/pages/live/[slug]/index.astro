@@ -1,0 +1,94 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import configData from "./../../../../config.json";
+import { marked } from "marked";
+
+export function getStaticPaths() {
+  return configData.groups.map((g) => {
+    return {
+      params: {
+        slug: g.slug,
+      },
+    };
+  });
+}
+
+const { slug } = Astro.params;
+const res = configData.groups.find((g) => g.slug === slug);
+if (!res) {
+  return Astro.redirect("/404");
+}
+const { title, location, programma, image, imageProgramma, links } = res;
+
+const files = import.meta.glob("./../../../../contents/*.md", {
+  as: "raw",
+  eager: true,
+});
+
+let programmaContentHtml = "";
+if (programma && programma.length > 3) {
+  const programmaContent = files[`../../../../contents/${programma}`];
+  programmaContentHtml = await marked.parse(programmaContent);
+}
+console.log("imageProgramma", imageProgramma);
+---
+
+<Layout
+  title={`Live streaming ${res.title} - ${res.location} | ${configData.title}`}
+  description={`Live streaming eventi equestri da ${res.title} a ${res.location}. Guarda le dirette e il programma delle gare su ${configData.title}.`}
+>
+  <main class="container mx-auto">
+    <section>
+      <h1 class="mb-3">
+        Live streaming {title} - {location}
+      </h1>
+      <p class="text-gray/80 max-w-3xl">
+        Live streaming eventi equestri dal centro ippico {title} di {location}.
+        Segui le arene disponibili e consulta il programma delle gare.
+      </p>
+      <div class="flex justify-center">
+        <a href={`/live/${slug}/`}>
+          <img src={`/images/${image}`} />
+        </a>
+      </div>
+      <hr class="mt-3" />
+      <div class="container mx-auto py-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-7xl mx-auto"
+        >
+          {
+            links.map((link) => (
+              <div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+                  <div class="p-6 flex flex-col items-center justify-between flex-1 text-center">
+                    <h3>
+                      <a href={link.slug}>{link.title}</a>
+                    </h3>
+                    <a
+                      href={`/live/${slug}/${link.slug}`}
+                      class="bg-custom-1 hover:bg-custom-2 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-md"
+                    >
+                      {configData.actions.vedi}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      {
+        programmaContentHtml && programmaContentHtml.length > 0 && (
+          <div set:html={programmaContentHtml} />
+        )
+      }
+      {
+        imageProgramma && imageProgramma.length > 0 && (
+          <div class="flex justify-center">
+            <img src={`/images/${imageProgramma}`} />
+          </div>
+        )
+      }
+    </section>
+  </main>
+</Layout>

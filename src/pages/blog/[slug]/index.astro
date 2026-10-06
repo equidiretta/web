@@ -1,0 +1,87 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import configData from "../../../../config.json";
+
+export const prerender = true;
+
+type BlogFrontmatter = {
+  title?: string;
+  date?: string;
+  description?: string;
+  excerpt?: string;
+};
+
+type MarkdownContent = (props: Record<string, unknown>) => unknown;
+
+type BlogPost = {
+  frontmatter?: Record<string, unknown>;
+  Content?: MarkdownContent;
+  default?: MarkdownContent;
+};
+
+export function getStaticPaths() {
+  const posts = import.meta.glob("../../../../blog/*.md");
+  return Object.keys(posts).map((path) => {
+    const filename = path.split("/").pop() ?? "";
+    const slug = filename.replace(/\.md$/, "");
+    return {
+      params: { slug },
+    };
+  });
+}
+
+const { slug } = Astro.params;
+const posts = import.meta.glob<BlogPost>("../../../../blog/*.md", {
+  eager: true,
+});
+const post = posts[`../../../../blog/${slug}.md`] as BlogPost | undefined;
+
+if (!post) {
+  return Astro.redirect("/404");
+}
+
+const Content = (post.Content ?? post.default) as MarkdownContent;
+const frontmatter = (post.frontmatter ?? {}) as BlogFrontmatter;
+const pageTitle = `${frontmatter.title ?? "Blog"} | Live streaming equestri | ${configData.title}`;
+const pageDescription = frontmatter.description ?? configData.description;
+const dateString = typeof frontmatter.date === "string" ? frontmatter.date : "";
+const dateValue = dateString ? new Date(dateString) : null;
+const dateLabel =
+  dateValue && !Number.isNaN(dateValue.getTime())
+    ? dateValue.toLocaleDateString("it-IT", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : "";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-10">
+    <article class="px-4 max-w-3xl mx-auto flex flex-col gap-6">
+      <div>
+        <a class="link text-sm" href="/blog/">← Torna al blog</a>
+      </div>
+      <div>
+        <h1 class="mb-2 flex flex-wrap items-baseline gap-2">
+          {frontmatter.title ?? "Senza titolo"}
+          <a
+            class="link text-sm"
+            href={`/blog/${slug}/`}
+            aria-label="Permalink a questo articolo"
+          >
+            Permalink
+          </a>
+        </h1>
+        {dateLabel && (
+          <small class="block text-gray/60">
+            <time datetime={dateString || undefined}>{dateLabel}</time>
+          </small>
+        )}
+      </div>
+      <div class="blog-container">
+        <Content />
+      </div>
+    </article>
+  </main>
+</Layout>

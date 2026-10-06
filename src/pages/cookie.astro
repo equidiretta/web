@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import configData from "../../config.json";
+
+export const prerender = true;
+
+const pageTitle = `Cookie Policy :: ${configData.title}`;
+const pageDescription = `Cookie Policy ${configData.title}`;
+const siteName = configData.title;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-10">
+    <section class="px-4 max-w-3xl mx-auto blog-container">
+      <h1>Cookie Policy</h1>
+      <p>
+        Questa Cookie Policy spiega cosa sono i cookie e come vengono utilizzati
+        su {siteName}. Proseguendo la navigazione, l’utente accetta l’uso dei
+        cookie secondo quanto descritto.
+      </p>
+
+      <h2>Cosa sono i cookie</h2>
+      <p>
+        I cookie sono piccoli file di testo che i siti web inviano al dispositivo
+        dell’utente. Servono per migliorare l’esperienza di navigazione e
+        fornire funzionalità essenziali.
+      </p>
+
+      <h2>Tipologie di cookie utilizzati</h2>
+      <ul>
+        <li>
+          Cookie tecnici e di funzionamento: necessari per il corretto
+          funzionamento del sito.
+        </li>
+        <li>
+          Cookie di analisi: utilizziamo Google Analytics per raccogliere
+          statistiche aggregate sull’uso del sito. L’indirizzo IP può essere
+          anonimizzato.
+        </li>
+      </ul>
+
+      <h2>Gestione dei cookie</h2>
+      <p>
+        L’utente può gestire o disabilitare i cookie attraverso le impostazioni
+        del browser. La disattivazione dei cookie tecnici potrebbe compromettere
+        alcune funzionalità del sito.
+      </p>
+
+      <h2>Contatti</h2>
+      <p>
+        Per ulteriori informazioni puoi scriverci a
+        <a class="link" href="mailto:info@equidiretta.tv">info@equidiretta.tv</a>.
+      </p>
+    </section>
+  </main>
+</Layout>

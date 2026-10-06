@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import configData from "../../config.json";
+
+export const prerender = true;
+
+const pageTitle = `Privacy Policy :: ${configData.title}`;
+const pageDescription = `Privacy Policy ${configData.title}`;
+const siteName = configData.title;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="container mx-auto py-10">
+    <section class="px-4 max-w-3xl mx-auto blog-container">
+      <h1>Privacy Policy</h1>
+      <p>
+        Questa informativa descrive come {siteName} tratta i dati personali degli
+        utenti che visitano il sito e utilizzano i servizi correlati. L’uso del
+        sito comporta l’accettazione della presente informativa.
+      </p>
+
+      <h2>Titolare del trattamento</h2>
+      <p>
+        Per richieste relative alla privacy puoi contattarci all’indirizzo email
+        <a class="link" href="mailto:info@equidiretta.tv">info@equidiretta.tv</a>.
+      </p>
+
+      <h2>Tipologia di dati trattati</h2>
+      <p>
+        Possiamo trattare dati di navigazione (indirizzo IP, tipo di dispositivo
+        e browser, pagine visitate, data e ora di accesso) e dati forniti
+        volontariamente dall’utente tramite contatti diretti.
+      </p>
+
+      <h2>Finalità e base giuridica</h2>
+      <ul>
+        <li>
+          Gestione tecnica del sito e sicurezza (legittimo interesse).
+        </li>
+        <li>
+          Analisi statistiche tramite Google Analytics per migliorare i servizi
+          (consenso, ove richiesto).
+        </li>
+        <li>
+          Risposta a richieste di contatto inviate dagli utenti (esecuzione di
+          misure precontrattuali o legittimo interesse).
+        </li>
+      </ul>
+
+      <h2>Conservazione dei dati</h2>
+      <p>
+        I dati vengono conservati per il tempo necessario alle finalità indicate
+        o in conformità alle disposizioni di legge applicabili.
+      </p>
+
+      <h2>Destinatari e trasferimenti</h2>
+      <p>
+        I dati possono essere trattati da fornitori di servizi tecnici (hosting,
+        manutenzione, analytics). Alcuni servizi potrebbero comportare
+        trasferimenti verso paesi extra SEE; in tali casi applichiamo le garanzie
+        previste dalla normativa vigente.
+      </p>
+
+      <h2>Diritti dell’utente</h2>
+      <p>
+        Gli utenti possono esercitare i diritti di accesso, rettifica,
+        cancellazione, limitazione, opposizione e portabilità dei dati, nonché
+        revocare il consenso quando applicabile. Per esercitare tali diritti
+        scrivere a <a class="link" href="mailto:info@equidiretta.tv">info@equidiretta.tv</a>.
+      </p>
+
+      <h2>Aggiornamenti</h2>
+      <p>
+        Questa informativa può essere aggiornata periodicamente. Ti invitiamo a
+        consultarla regolarmente.
+      </p>
+    </section>
+  </main>
+</Layout>
