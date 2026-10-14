@@ -7,9 +7,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2"> 01-04 Ottobre</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2"> 16-18 Ottobre</p>
   <p class="text-xl text-gray-800 italic mb-8">
-     Progetto Sport Finale
+     CSI 2* - CSI 1* - CSI Young Horses 1* - CSI Pony Cat.A
   </p>
 
    <div class="mt-3">
@@ -26,8 +26,8 @@
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">4 Giorni</span>
-        <span class="text-orange-600 font-bold text-xl">50€</span>
+        <span class="font-medium">3 Giorni</span>
+        <span class="text-orange-600 font-bold text-xl">40€</span>
       </li>
     </ul>
   </div>
@@ -37,9 +37,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2">  October 01-04 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2">  October 16-18 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-     Progetto Sport Finale
+     CSI 2* - CSI 1* - CSI Young Horses 1* - CSI Pony Cat.A
   </p>
 
    <div class="mt-3">
@@ -56,8 +56,8 @@
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">4 Days</span>
-        <span class="text-orange-600 font-bold text-xl">50€</span>
+        <span class="font-medium">3 Days</span>
+        <span class="text-orange-600 font-bold text-xl">40€</span>
       </li>
     </ul>
   </div>

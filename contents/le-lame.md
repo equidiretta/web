@@ -3,9 +3,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2">2-5 Aprile 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2">15-18 Ottobre 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-    A5*
+    Campionati Italiani Giovanili
   </p>
 
 <div class="mt-3">
@@ -15,15 +15,15 @@
   </div>
 
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
-    <h4 class="text-2xl font-bold text-orange-700 mb-6">Acquista lo streaming dell'Arena Giove del concorso di Le Lame Horses Sporting Club direttamente dalla finestra dello streaming <u>(sono esclusi i concorsi di dressage)</u></h4>
+    <h4 class="text-2xl font-bold text-orange-700 mb-6">Streaming offerto da Equidiretta.tv <u></u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">1 Giorno</span>
-        <span class="text-orange-600 font-bold text-xl">15€</span>
+        <span class="font-medium"></span>
+        <span class="text-orange-600 font-bold text-xl"></span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">4 Giorni</span>
-        <span class="text-orange-600 font-bold text-xl">50€</span>
+        <span class="font-medium"></span>
+        <span class="text-orange-600 font-bold text-xl"></span>
       </li>
     </ul>
   </div>
@@ -33,9 +33,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2"> April 2-5 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2"> October 15-18 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-    A5* + Progetto sport
+    Campionati Italiani Giovanili
   </p>
 
    <div class="mt-3">
@@ -45,15 +45,15 @@
   </div>
 
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
-    <h4 class="text-2xl font-bold text-orange-700 mb-6">Purchase streaming for Arena Giove at Le Lame Horses Sporting Club's event directly in the streaming window <u>(dressage events not included)</u></h4>
+    <h4 class="text-2xl font-bold text-orange-700 mb-6">Strwaming sponsored by Equidiretta.tv <u></u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">1 Day</span>
-        <span class="text-orange-600 font-bold text-xl">15€</span>
+        <span class="font-medium"></span>
+        <span class="text-orange-600 font-bold text-xl"></span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">4 Days</span>
-        <span class="text-orange-600 font-bold text-xl">50€</span>
+        <span class="font-medium"></span>
+        <span class="text-orange-600 font-bold text-xl"></span>
       </li>
     </ul>
   </div>
