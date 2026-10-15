@@ -45,7 +45,7 @@
   </div>
 
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
-    <h4 class="text-2xl font-bold text-orange-700 mb-6">Strwaming sponsored by Equidiretta.tv <u></u></h4>
+    <h4 class="text-2xl font-bold text-orange-700 mb-6">Streaming sponsored by Equidiretta.tv <u></u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium"></span>
