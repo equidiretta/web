@@ -4,9 +4,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-6">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-4">25-27 Settembre 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-4">16-18 Ottobre 2026</p>
   <p class="text-xl text-gray-800 italic mb-12">
-    III Master Città di Terracina
+    A5*
   </p>
 
   <div class="mt-3">
@@ -36,9 +36,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-6">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-4"> September 25-27 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-4"> October 16-18 2026</p>
   <p class="text-xl text-gray-800 italic mb-12">
-     III Master Città di Terracina
+     A5*
   </p>
 
   <div class="mt-3">
