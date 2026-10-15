@@ -21,12 +21,16 @@
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
     <h4 class="text-2xl font-bold text-orange-700 mb-6">Acquista lo streaming di tutti i campi del concorso di Horses Riviera Resort direttamente dalla finestra dello streaming <u>(sono esclusi i concorsi di dressage )</u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
+    <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">Accesso per 1 Ora</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
+      </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">1 Giorno</span>
+        <span class="font-medium">Accesso per 1 Giorno</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">3 Giorni</span>
+        <span class="font-medium">Accesso per 3 Giorni</span>
         <span class="text-orange-600 font-bold text-xl">40€</span>
       </li>
     </ul>
@@ -51,12 +55,16 @@
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
     <h4 class="text-2xl font-bold text-orange-700 mb-6">Purchase streaming for all fields of Horses Riviera Resort's event directly in the streaming window <u>(dressage events not included)</u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
+    <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">1 Hour Access</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
+      </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">1 Day</span>
+        <span class="font-medium">1 Day Access</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium">3 Days</span>
+        <span class="font-medium">3 Days Access</span>
         <span class="text-orange-600 font-bold text-xl">40€</span>
       </li>
     </ul>
