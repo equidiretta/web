@@ -3,9 +3,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2">15-18 Ottobre 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2">13-15 Novembre 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-    Campionati Italiani Giovanili
+    A5*
   </p>
 
 <div class="mt-3">
@@ -15,15 +15,19 @@
   </div>
 
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
-    <h4 class="text-2xl font-bold text-orange-700 mb-6">Streaming offerto da Equidiretta.tv <u></u></h4>
+    <h4 class="text-2xl font-bold text-orange-700 mb-6">Acquista lo streaming di tutti i campi del concorso di Horses Riviera Resort direttamente dalla finestra dello streaming <u>(sono esclusi i concorsi di dressage ) <u></u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium"></span>
-        <span class="text-orange-600 font-bold text-xl"></span>
+        <span class="font-medium">Accesso per 1 Ora</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium"></span>
-        <span class="text-orange-600 font-bold text-xl"></span>
+        <span class="font-medium">Accesso per 1 Giorno</span>
+        <span class="text-orange-600 font-bold text-xl">15€</span>
+      </li>
+      <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">Accesso per 3 Giorni</span>
+        <span class="text-orange-600 font-bold text-xl">40€</span>
       </li>
     </ul>
   </div>
@@ -33,9 +37,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2"> October 15-18 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2"> November 13-15 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-    Campionati Italiani Giovanili
+    A5*
   </p>
 
    <div class="mt-3">
@@ -45,15 +49,19 @@
   </div>
 
   <div class="bg-white rounded-xl p-6 shadow-md inline-block">
-    <h4 class="text-2xl font-bold text-orange-700 mb-6">Streaming sponsored by Equidiretta.tv <u></u></h4>
+    <h4 class="text-2xl font-bold text-orange-700 mb-6">Purchase streaming for all fields of Horses Riviera Resort's event directly in the streaming window <u>(dressage events not included) <u></u></h4>
     <ul class="text-lg space-y-4 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium"></span>
-        <span class="text-orange-600 font-bold text-xl"></span>
+       <span class="font-medium">1 Hour Access</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
       <li class="flex justify-between max-w-xs mx-auto">
-        <span class="font-medium"></span>
-        <span class="text-orange-600 font-bold text-xl"></span>
+        <span class="font-medium">1 Day Access</span>
+        <span class="text-orange-600 font-bold text-xl">15€</span>
+      </li>
+      <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">3 Days Access</span>
+        <span class="text-orange-600 font-bold text-xl">S0€</span>
       </li>
     </ul>
   </div>
