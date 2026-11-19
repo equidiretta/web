@@ -4,7 +4,7 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-6">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-4">16-18 Ottobre 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-4">20-22 Novembre 2026</p>
   <p class="text-xl text-gray-800 italic mb-12">
     A5*
   </p>
@@ -20,12 +20,15 @@
        Acquista lo streaming di tutti i campi del concorso di Borgo Hermada direttamente dalla finestra dello streaming <u>(sono esclusi i concorsi di dressage)</u>
     </h4>
     <ul class="text-lg space-y-8 text-gray-700">
-      <li class="flex justify-center gap-12">
-        <span class="font-medium">1 Giorno</span>
+      <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">Accesso per 1 Ora</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
+      </li>
+        <span class="font-medium">Accesso per 1 Giorno</span>
         <span class="text-orange-600 font-bold text-2xl">15€</span>
       </li>
       <li class="flex justify-center gap-12">
-        <span class="font-medium">3 Giorni</span>
+        <span class="font-medium">Accesso per 3 Giorni</span>
         <span class="text-orange-600 font-bold text-2xl">40€</span>
       </li>
     </ul>
@@ -36,7 +39,7 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-6">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-4"> October 16-18 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-4"> November 20-22 2026</p>
   <p class="text-xl text-gray-800 italic mb-12">
      A5*
   </p>
@@ -52,12 +55,15 @@
       Purchase streaming for all fields of Borgo Hermada's event directly in the streaming window <u>(dressage events not included)</u>
     </h4>
     <ul class="text-lg space-y-8 text-gray-700">
-      <li class="flex justify-center gap-12">
-        <span class="font-medium">1 Day</span>
+      <li class="flex justify-between max-w-xs mx-auto">
+        <span class="font-medium">1 Hour Access</span>
+        <span class="text-orange-600 font-bold text-xl">6€</span>
+      </li>
+        <span class="font-medium">1 Day Access</span>
         <span class="text-orange-600 font-bold text-2xl">15€</span>
       </li>
       <li class="flex justify-center gap-12">
-        <span class="font-medium">3 Days</span>
+        <span class="font-medium">3 Days Access</span>
         <span class="text-orange-600 font-bold text-2xl">40€</span>
       </li>
     </ul>
