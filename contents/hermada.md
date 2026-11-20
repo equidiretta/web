@@ -22,12 +22,13 @@
     <ul class="text-lg space-y-8 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">Accesso per 1 Ora</span>
-        <span class="text-orange-600 font-bold text-xl">6€</span>
+        <span class="text-orange-600 font-bold text-2xl">6€</span>
       </li>
+        <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">Accesso per 1 Giorno</span>
         <span class="text-orange-600 font-bold text-2xl">15€</span>
       </li>
-      <li class="flex justify-center gap-12">
+      <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">Accesso per 3 Giorni</span>
         <span class="text-orange-600 font-bold text-2xl">40€</span>
       </li>
@@ -57,12 +58,13 @@
     <ul class="text-lg space-y-8 text-gray-700">
       <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">1 Hour Access</span>
-        <span class="text-orange-600 font-bold text-xl">6€</span>
+        <span class="text-orange-600 font-bold text-2xl">6€</span>
       </li>
+      <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">1 Day Access</span>
         <span class="text-orange-600 font-bold text-2xl">15€</span>
       </li>
-      <li class="flex justify-center gap-12">
+      <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">3 Days Access</span>
         <span class="text-orange-600 font-bold text-2xl">40€</span>
       </li>

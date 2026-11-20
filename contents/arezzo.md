@@ -24,6 +24,7 @@
         <span class="font-medium">Accesso per 1 Ora</span>
         <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
+        <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">Accesso per 1 Giorno</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
@@ -57,6 +58,7 @@
         <span class="font-medium">1 Hour Access</span>
         <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
+        <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">1 Day Access</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
