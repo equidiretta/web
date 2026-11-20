@@ -24,6 +24,7 @@
         <span class="font-medium">Accesso per 1 Ora</span>
         <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
+         <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">Accesso per 1 Giorno</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
@@ -41,7 +42,7 @@
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Upcoming events</h3>
   <p class="text-2xl font-semibold text-gray-900 mb-2"> November 20-22 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-    B2*
+    A0*
   </p>
 
    <div class="mt-3">
@@ -57,6 +58,7 @@
         <span class="font-medium">1 Hour Access</span>
         <span class="text-orange-600 font-bold text-xl">6€</span>
       </li>
+         <li class="flex justify-between max-w-xs mx-auto">
         <span class="font-medium">1 Day Access</span>
         <span class="text-orange-600 font-bold text-xl">15€</span>
       </li>
