@@ -7,9 +7,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Prossimi eventi</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2"> 20-22 Novembre</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2"> 27-29 Novembre</p>
   <p class="text-xl text-gray-800 italic mb-8">
-     A2*
+     A5*
   </p>
 
    <div class="mt-3">
@@ -41,9 +41,9 @@
 
 <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 my-8 shadow-lg border border-orange-200 text-center">
   <h3 class="text-3xl font-bold text-orange-800 mb-4">Upcoming events</h3>
-  <p class="text-2xl font-semibold text-gray-900 mb-2">  November 20-22 2026</p>
+  <p class="text-2xl font-semibold text-gray-900 mb-2">  November 27-29 2026</p>
   <p class="text-xl text-gray-800 italic mb-8">
-     A2*
+     A5*
   </p>
 
    <div class="mt-3">
